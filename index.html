@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Mr. Mandal's Portfolio</title>
+  </head>
+
+  <body>
+    <div>
+      <div id="overlay-bg"></div>
+      <div id="overlay">
+        <img id="close-button" src="./images/icons/close-icon.svg" alt="close button">
+        <a  class="menu-link" href="#projects">Portoflio</a>
+        <a  class="menu-link" href="#about-myself">About</a>
+        <a class="menu-link" href="#contact-form">Contact</a>
+      </div>
+    </div>
+    <header id="header">
+      <div id="logo">Mr. Mandal</div>
+      <nav id="nav">
+        <a href="#projects">Portoflio</a>
+        <a href="#about-myself">About</a>
+        <a href="#contact-form">Contact</a>
+      </nav>
+    </header>
+    <section id="profile">
+      <h1 id="intro">
+        I'm Mr. Mandal <br />
+        Glad to see you!
+      </h1>
+      <p id="about-me">
+        I'm a software developer! I can help you build a product, feature or
+        website. Look through some of my work and experience! If you like what
+        you see and have a project you need coded, don't hestiate to contact me.
+      </p>
+      <section class="contacts">
+        <h2 class="contacts-heading">LET'S CONNECT</h2>
+        <ul class="social-media-icons no-bullets">
+          <li>
+            <a href="https://github.com/NayanKaran">
+              <img alt="github icon" src="./images/icons/github_icon.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/debabrata-mandal-83461696/">
+              <img alt="linkedin icon" src="./images/icons/linkedin_icon.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/bapidebabrata">
+              <img alt="twitter icon" src="./images/icons/twitter_icon.svg" />
+            </a>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <div id="projects">
+    </div>
+    <footer id="footer">
+      <section id="about-myself">
+        <div>
+          <h2 id="about-myself-heading">About Myself</h2>
+          <p id="about-myself-description">
+            Hello I'm a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don't
+            hestiate to contact me.
+          </p>
+          <section class="contacts">
+            <h2 class="contacts-heading">LET'S CONNECT</h2>
+            <ul class="social-media-icons no-bullets">
+              <li>
+                <a href="https://github.com/NayanKaran">
+                  <img alt="github icon" src="./images/icons/github_icon.svg" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/debabrata-mandal-83461696/"
+                >
+                  <img
+                    alt="linkedin icon"
+                    src="./images/icons/linkedin_icon.svg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/bapidebabrata">
+                  <img
+                    alt="twitter icon"
+                    src="./images/icons/twitter_icon.svg"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+          <button type="button" id="resume-button">Get my resume</button>
+        </div>
+        <section>
+          <h3 tabindex=0 class="list-heading">Languages<i class="arrow down"></i></h3>
+          <ul class="list">
+            <li class="list-items">
+              JavaScript
+              <img
+                src="./images/icons/javascript_icon.png"
+                alt="JavaScript icon"
+              />
+            </li>
+            <li class="list-items">
+              HTML
+              <img src="./images/icons/html5_icon.png" alt="HTML icon" />
+            </li>
+            <li class="list-items">
+              CSS
+              <img src="./images/icons/css3_icon.png" alt="CSS icon" />
+            </li>
+          </ul>
+          <hr class="solid hidden" />
+          <h3 tabindex=0 class="list-heading">Frameworks<i class="arrow right"></i></h3>
+          <hr class="solid" />
+          <h3 tabindex=0 class="list-heading">Skills<i class="arrow right"></i></h3>
+          <hr class="solid" />
+        </section>
+      </section>
+      <section id="contact-form">
+        <h2>Contact me</h2>
+        <p>
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I'd love to help
+          with it.
+        </p>
+        <form id="form" action="https://formspree.io/f/xbjwpdqp" method="post">
+          <input
+            type="text"
+            id="client-name"
+            name="client-name"
+            placeholder="Please write your name"
+            maxlength="30"
+            required
+          /><br />
+          <input
+            type="email"
+            id="client-email"
+            name="client-email"
+            placeholder="Please write your email"
+            required
+          /><br />
+          <textarea
+            id="client-message"
+            name="client-message"
+            placeholder="Please write your message here"
+            maxlength="500"
+            required
+          ></textarea
+          ><br />
+          <button type="submit" name="submit" id="form-button">
+            Get In Touch
+          </button>
+        </form>
+      </section>
+    </footer>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
